@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dW.css">
+    
+</head>
+<body>
+    <div class="navBar">
+        <h1>Dojo Weather</h1>
+        <p class="city" onclick="alert ('Loading weather report ...')">Burbank</p>
+        <p class="city" onclick="alert ('Loading weather report ...')">Chicago</p>
+        <p class="city" onclick="alert ('Loading weather report ...')">Dallas</p>
+    </div>
+    <div class="page">
+        <div class="showTemp">
+            <h2>San Jose</h2>
+            <div>
+                <label for="tempIn">show temperature in</label>
+                <select onchange="tempIn(this)">
+                    <option value="C°">C°</option>
+                    <option value="F°">F°</option>
+                </select>
+            </div>
+        </div> 
+        <div class="daysOfWeek">
+            <div class="days">
+                <h3>Today</h3>
+                <img src=some_rain.png alt="rainy cloud">
+                <h4>some rain</h4>
+                <div class="temps">
+                    <h2 class="red">23.9°</h2>
+                    <h2 class="blue">18.3°</h2>
+                </div>
+            </div>
+            <div class="days">
+                <h3>Tomorrow</h3>
+                <img src=some_sun.png alt="sun">
+                <h4>some sun</h4>
+                <div class="temps">
+                    <h2 class="red">26.7°</h2>
+                    <h2 class="blue">18.9°</h2>
+                </div>
+            </div>
+            <div class="days">
+                <h3>Friday</h3>
+                <img src=some_clouds.png alt="cloud">
+                <h4>some clouds</h4>
+                <div class="temps">
+                    <h2 class="red">20.6°</h2>
+                    <h2 class="blue">16.1°</h2>
+                </div>
+            </div>
+            <div class="days">
+                <h3>Saturday</h3>
+                <img src=some_sun.png alt="sun">
+                <h4>some sun</h4>
+                <div class="temps">
+                    <h2 class="red">25.6°</h2>
+                    <h2 class="blue">21.1°</h2>
+                </div>
+            </div>
+            <div class="message">
+                <img src="cookie.png" alt="cookie">
+                <div>
+                    <h3>Stop! Cookie time</h2>
+                    <p id="gone" class="par">We use cookies (sadly not the enidle ones) to personalize content and ads, to provide social media features and to analys our trafic. <a href="">read more...</a></p>
+                </div>
+                <button onclick="accept()">I accept</button>
+            </div>
+        </div>       
+    </div>
+    <script src="dW.js"></script>
+
+</body>
+</html>
